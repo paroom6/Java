@@ -1,0 +1,22 @@
+package Exam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Example01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> list = new ArrayList<String>();
+		
+		list.add("사과");
+		list.add("딸기");
+		list.add("망고");
+		System.out.println(list);
+		list.add("체리");
+		list.add("파인애플");
+		System.out.println(list);
+		
+	}
+
+}

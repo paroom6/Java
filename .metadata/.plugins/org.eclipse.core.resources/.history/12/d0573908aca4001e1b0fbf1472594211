@@ -1,0 +1,32 @@
+package Exam;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 숫자 6개를 입력받아 이를 오름차순으로 정렬하는 프로그램 작성
+		 * 단 숫자는 중복되지않음
+		 * 입력 >> 5 5 2 3 4 1
+		 * 출력 >> 1 2 3 4 5
+		 */
+		Scanner sc = new Scanner(System.in);
+		HashSet<Integer>list = new HashSet<Integer>();
+		System.out.print("입력 >> ");
+		for(int i=0; i<6; i++) {
+			int num= sc.nextInt();
+			list.add(num);
+		}
+		System.out.print("출력 >> ");
+		Iterator iter = list.iterator();
+		System.out.println(iter);
+		//System.out.println(list);
+		
+	}
+
+}
